@@ -1,30 +1,41 @@
 <script>
-  import AppHeader from "./components/AppHeader.vue";
-  import AppMainContent from "./components/AppMainContent.vue";
-  import AppFeatures from "./components/AppFeatures.vue";
-  import AppTopFooter from "./components/AppTopFooter.vue";
-  import AppBottomFooter from "./components/AppBottomFooter.vue";
-  export default {
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+
+export default {
+
+    name: 'App',
+    data() {
+        return {
+
+        }
+    },
     components: {
-      AppHeader,
-      AppMainContent,
-      AppFeatures,
-      AppTopFooter,
-      AppBottomFooter,
+
+        AppHeader,
+        AppMain,
+        AppFooter,
     }
-  }
+
+}
 </script>
 
 <template>
-  <div>
-    <AppHeader></AppHeader>
-    <AppMainContent></AppMainContent>
-    <AppFeatures></AppFeatures>
-    <AppTopFooter></AppTopFooter>
-    <AppBottomFooter></AppBottomFooter>
-  </div>
+    <header>
+        <div class="container">
+            <AppHeader></AppHeader>
+        </div>
+    </header>
+    <AppMain></AppMain>
+    <AppFooter></AppFooter>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import '../src/assets/scss/app.scss';
 
+/* ho trovato un altro metodo per suddividere l'header e dargli un colore di sfondo ma è più scomdo */
+header {
+    background-color: $dc-white;
+}
 </style>
