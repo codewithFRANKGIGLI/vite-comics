@@ -1,17 +1,19 @@
-    <script>
-      import { AppHeader } from "AppHeader.vue";
-      import { AppMainContent } from "AppMainContent.vue";
-      import { AppFeatures } from "AppFeatures.vue";
-      import { AppTopFooter } from "AppTopFooter.vue";
-      import { AppBottomFooter } from "AppBottomFooter.vue";
-      export default {
-        AppHeader,
-        AppMainContent,
-        AppFeatures,
-        AppTopFooter,
-        AppBottomFooter,
-      }
-    </script>
+<script>
+  import AppHeader from "./components/AppHeader.vue";
+  import AppMainContent from "./components/AppMainContent.vue";
+  import AppFeatures from "./components/AppFeatures.vue";
+  import AppTopFooter from "./components/AppTopFooter.vue";
+  import AppBottomFooter from "./components/AppBottomFooter.vue";
+  export default {
+    components: {
+      AppHeader,
+      AppMainContent,
+      AppFeatures,
+      AppTopFooter,
+      AppBottomFooter,
+    }
+  }
+</script>
 
 <template>
   <div>
@@ -23,6 +25,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>

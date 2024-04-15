@@ -1,14 +1,14 @@
-<template>
-    <div>
-        
-    </div>
-</template>
-
 <script>
     export default {
-        
+        name: 'AppHeader'
     }
 </script>
+
+<template>
+    <div>
+        HEADER
+    </div>
+</template>
 
 <style scoped>
     
